@@ -11,11 +11,23 @@
 
 Unggah gambar benda langit dan biarkan AI mengidentifikasinya dalam hitungan detik.
 
+🔗 **Repository:** [github.com/WafiJackson/Space-Image-Classifier](https://github.com/WafiJackson/Space-Image-Classifier.git)
+
 </div>
 
 ---
 
-## 📋 Deskripsi
+## 👤 Pengembang
+
+| Nama | GitHub |
+|------|--------|
+| **Yafi Hidayatullah** | [@WafiJackson](https://github.com/WafiJackson) |
+
+> **Catatan:** Proyek ini dikerjakan secara **individu** (solo project) sebagai tugas UAS Praktikum Machine Learning.
+
+---
+
+## 📋 Deskripsi Proyek
 
 **Space Image Classifier** adalah aplikasi web berbasis _deep learning_ yang mampu mengklasifikasikan gambar objek luar angkasa ke dalam **6 kategori** secara otomatis. Proyek ini merupakan tugas **UAS Praktikum Machine Learning Semester 6 (2026)**.
 
@@ -66,6 +78,12 @@ Space-Image-Classifier/
 └── Readme.md
 ```
 
+> ⚠️ **Catatan:** File model (`.h5`) tidak disertakan dalam repository karena ukurannya yang besar. Silakan unduh model melalui tautan berikut:
+>
+> 📥 **[Download Model (.h5) — Google Drive](https://drive.google.com/file/d/1V4RdnTJx2FGxKvU62ogcZMe5W-VlAZNH/view?usp=sharing)**
+>
+> Setelah diunduh, letakkan file model di dalam folder `backend/model/`.
+
 ---
 
 ## 🚀 Cara Menjalankan
@@ -78,7 +96,7 @@ Space-Image-Classifier/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/<username>/Space-Image-Classifier.git
+git clone https://github.com/WafiJackson/Space-Image-Classifier.git
 cd Space-Image-Classifier
 ```
 
@@ -183,11 +201,11 @@ h5py==3.11.0
 ## 🛠️ Alur Kerja Sistem
 
 ```
-┌─────────────┐     HTTP POST      ┌─────────────────┐     Predict      ┌──────────────┐
-│  Streamlit   │ ─────────────────▶ │   FastAPI API    │ ───────────────▶ │  CNN Model   │
-│  (Frontend)  │ ◀───────────────── │   (Backend)      │ ◀─────────────── │  (TensorFlow)│
-│  Port: 8501  │   JSON Response    │   Port: 8000     │   Prediction     │  150×150 px  │
-└─────────────┘                     └─────────────────┘                   └──────────────┘
+┌──────────────────┐    HTTP POST     ┌──────────────────┐    Predict      ┌──────────────────┐
+│    Streamlit     │ ───────────────▶ │   FastAPI API    │ ─────────────▶  │    CNN Model     │
+│   (Frontend)     │                  │    (Backend)     │                 │   (TensorFlow)   │
+│   Port: 8501     │ ◀─────────────── │   Port: 8000     │ ◀────────────── │   150×150 px     │
+└──────────────────┘  JSON Response   └──────────────────┘  Prediction     └──────────────────┘
 ```
 
 1. Pengguna mengunggah gambar melalui antarmuka **Streamlit**.
@@ -206,8 +224,10 @@ Proyek ini dibuat untuk keperluan akademik — **UAS Praktikum Machine Learning,
 
 <div align="center">
 
-**Built with ❤️ using Streamlit & TensorFlow**
+**Built with ❤️ by WafiJackson using Streamlit & TensorFlow**
 
 *Space Image Classifier v1.0*
+
+📂 [GitHub Repository](https://github.com/WafiJackson/Space-Image-Classifier.git)
 
 </div>

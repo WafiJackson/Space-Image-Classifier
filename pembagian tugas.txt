@@ -1,0 +1,26 @@
+Judul Proyek    : CosmicLens - Space Image Classifier
+Nama Lengkap    : Yafi Hidayatullah
+NIM             : 2308107010059
+
+1. Data Engineer (20%)
+   - Mengumpulkan dataset Space Images dari internet (Web Crawling).
+   - Membangun skrip Python (filter_dataset.py) untuk pembersihan data (Data Cleansing) secara otomatis dari gambar berskor akurasi rendah.
+   - Melakukan normalisasi penomoran file (Auto-Rename) agar terstruktur.
+
+2. Machine Learning Engineer (30%)
+   - Mendesain arsitektur CNN (Convolutional Neural Network) Sequential.
+   - Melakukan eksperimen komparatif Optimizer (Adam vs RMSprop).
+   - Melatih ulang model final hingga mencapai konvergensi optimal dengan mengimplementasikan Data Augmentation, EarlyStopping, dan ModelCheckpoint.
+
+3. Backend Developer (20%)
+   - Merancang dan mendeploy REST API menggunakan framework FastAPI.
+   - Mengintegrasikan file model (.h5) ke dalam sistem backend agar dapat memproses gambar input menjadi output prediksi secara asinkron.
+
+4. Frontend Developer (20%)
+   - Mengembangkan antarmuka pengguna (User Interface) berbasis web yang responsif menggunakan Streamlit.
+   - Mengintegrasikan koneksi klien dengan endpoint backend.
+
+5. Quality Assurance & Documentation (10%)
+   - Melakukan end-to-end testing pada sistem (FastAPI + Streamlit).
+   - Menyusun instruksi deployment pada README.md dan mengurasi dataset uji untuk presentasi (Happy Path / Demo Engineering).
+
